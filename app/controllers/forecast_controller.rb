@@ -21,7 +21,7 @@ class ForecastController < ApplicationController
     current_temp = parsed_data["currently"]["temperature"]
     current_summary = parsed_data["currently"]["summary"]
     summary_sixty = parsed_data["minutely"]["summary"]
-    summary_hours = parsed_data["daily"]["data"][0]["summary"]
+    summary_hours = parsed_data["hourly"]["summary"]
     summary_days = parsed_data["daily"]["summary"]
 
     @current_temperature = current_temp
